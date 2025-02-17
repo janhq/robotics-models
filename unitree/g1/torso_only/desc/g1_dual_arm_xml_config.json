@@ -1,1 +1,229 @@
-{"format": "mjcf", "joints": {"left_shoulder_pitch_joint": {"joint_type": "hinge", "index": 0, "limits": {"angle_lower": -3.0892, "angle_upper": 2.6704, "force_lower": -25.0, "force_upper": 25.0}, "parent": null, "child": null}, "left_shoulder_roll_joint": {"joint_type": "hinge", "index": 1, "limits": {"angle_lower": -1.5882, "angle_upper": 2.2515, "force_lower": -25.0, "force_upper": 25.0}, "parent": null, "child": null}, "left_shoulder_yaw_joint": {"joint_type": "hinge", "index": 2, "limits": {"angle_lower": -2.618, "angle_upper": 2.618, "force_lower": -25.0, "force_upper": 25.0}, "parent": null, "child": null}, "left_elbow_joint": {"joint_type": "hinge", "index": 3, "limits": {"angle_lower": -1.0472, "angle_upper": 2.0944, "force_lower": -25.0, "force_upper": 25.0}, "parent": null, "child": null}, "left_wrist_roll_joint": {"joint_type": "hinge", "index": 4, "limits": {"angle_lower": -1.97222, "angle_upper": 1.97222, "force_lower": -25.0, "force_upper": 25.0}, "parent": null, "child": null}, "left_wrist_pitch_joint": {"joint_type": "hinge", "index": 5, "limits": {"angle_lower": -1.61443, "angle_upper": 1.61443, "force_lower": -5.0, "force_upper": 5.0}, "parent": null, "child": null}, "left_wrist_yaw_joint": {"joint_type": "hinge", "index": 6, "limits": {"angle_lower": -1.61443, "angle_upper": 1.61443, "force_lower": -5.0, "force_upper": 5.0}, "parent": null, "child": null}, "right_shoulder_pitch_joint": {"joint_type": "hinge", "index": 7, "limits": {"angle_lower": -3.0892, "angle_upper": 2.6704, "force_lower": -25.0, "force_upper": 25.0}, "parent": null, "child": null}, "right_shoulder_roll_joint": {"joint_type": "hinge", "index": 8, "limits": {"angle_lower": -2.2515, "angle_upper": 1.5882, "force_lower": -25.0, "force_upper": 25.0}, "parent": null, "child": null}, "right_shoulder_yaw_joint": {"joint_type": "hinge", "index": 9, "limits": {"angle_lower": -2.618, "angle_upper": 2.618, "force_lower": -25.0, "force_upper": 25.0}, "parent": null, "child": null}, "right_elbow_joint": {"joint_type": "hinge", "index": 10, "limits": {"angle_lower": -1.0472, "angle_upper": 2.0944, "force_lower": -25.0, "force_upper": 25.0}, "parent": null, "child": null}, "right_wrist_roll_joint": {"joint_type": "hinge", "index": 11, "limits": {"angle_lower": -1.97222, "angle_upper": 1.97222, "force_lower": -25.0, "force_upper": 25.0}, "parent": null, "child": null}, "right_wrist_pitch_joint": {"joint_type": "hinge", "index": 12, "limits": {"angle_lower": -1.61443, "angle_upper": 1.61443, "force_lower": -5.0, "force_upper": 5.0}, "parent": null, "child": null}, "right_wrist_yaw_joint": {"joint_type": "hinge", "index": 13, "limits": {"angle_lower": -1.61443, "angle_upper": 1.61443, "force_lower": -5.0, "force_upper": 5.0}, "parent": null, "child": null}}}
+{
+  "format": "mjcf",
+  "joints": {
+    "left_shoulder_pitch_joint": {
+      "joint_type": "hinge",
+      "index": 0,
+      "limits": {
+        "angle": [
+          -3.0892,
+          2.6704
+        ],
+        "force": [
+          -25.0,
+          25.0
+        ]
+      },
+      "parent": null,
+      "child": null
+    },
+    "left_shoulder_roll_joint": {
+      "joint_type": "hinge",
+      "index": 1,
+      "limits": {
+        "angle": [
+          -1.5882,
+          2.2515
+        ],
+        "force": [
+          -25.0,
+          25.0
+        ]
+      },
+      "parent": null,
+      "child": null
+    },
+    "left_shoulder_yaw_joint": {
+      "joint_type": "hinge",
+      "index": 2,
+      "limits": {
+        "angle": [
+          -2.618,
+          2.618
+        ],
+        "force": [
+          -25.0,
+          25.0
+        ]
+      },
+      "parent": null,
+      "child": null
+    },
+    "left_elbow_joint": {
+      "joint_type": "hinge",
+      "index": 3,
+      "limits": {
+        "angle": [
+          -1.0472,
+          2.0944
+        ],
+        "force": [
+          -25.0,
+          25.0
+        ]
+      },
+      "parent": null,
+      "child": null
+    },
+    "left_wrist_roll_joint": {
+      "joint_type": "hinge",
+      "index": 4,
+      "limits": {
+        "angle": [
+          -1.97222,
+          1.97222
+        ],
+        "force": [
+          -25.0,
+          25.0
+        ]
+      },
+      "parent": null,
+      "child": null
+    },
+    "left_wrist_pitch_joint": {
+      "joint_type": "hinge",
+      "index": 5,
+      "limits": {
+        "angle": [
+          -1.61443,
+          1.61443
+        ],
+        "force": [
+          -5.0,
+          5.0
+        ]
+      },
+      "parent": null,
+      "child": null
+    },
+    "left_wrist_yaw_joint": {
+      "joint_type": "hinge",
+      "index": 6,
+      "limits": {
+        "angle": [
+          -1.61443,
+          1.61443
+        ],
+        "force": [
+          -5.0,
+          5.0
+        ]
+      },
+      "parent": null,
+      "child": null
+    },
+    "right_shoulder_pitch_joint": {
+      "joint_type": "hinge",
+      "index": 7,
+      "limits": {
+        "angle": [
+          -3.0892,
+          2.6704
+        ],
+        "force": [
+          -25.0,
+          25.0
+        ]
+      },
+      "parent": null,
+      "child": null
+    },
+    "right_shoulder_roll_joint": {
+      "joint_type": "hinge",
+      "index": 8,
+      "limits": {
+        "angle": [
+          -2.2515,
+          1.5882
+        ],
+        "force": [
+          -25.0,
+          25.0
+        ]
+      },
+      "parent": null,
+      "child": null
+    },
+    "right_shoulder_yaw_joint": {
+      "joint_type": "hinge",
+      "index": 9,
+      "limits": {
+        "angle": [
+          -2.618,
+          2.618
+        ],
+        "force": [
+          -25.0,
+          25.0
+        ]
+      },
+      "parent": null,
+      "child": null
+    },
+    "right_elbow_joint": {
+      "joint_type": "hinge",
+      "index": 10,
+      "limits": {
+        "angle": [
+          -1.0472,
+          2.0944
+        ],
+        "force": [
+          -25.0,
+          25.0
+        ]
+      },
+      "parent": null,
+      "child": null
+    },
+    "right_wrist_roll_joint": {
+      "joint_type": "hinge",
+      "index": 11,
+      "limits": {
+        "angle": [
+          -1.97222,
+          1.97222
+        ],
+        "force": [
+          -25.0,
+          25.0
+        ]
+      },
+      "parent": null,
+      "child": null
+    },
+    "right_wrist_pitch_joint": {
+      "joint_type": "hinge",
+      "index": 12,
+      "limits": {
+        "angle": [
+          -1.61443,
+          1.61443
+        ],
+        "force": [
+          -5.0,
+          5.0
+        ]
+      },
+      "parent": null,
+      "child": null
+    },
+    "right_wrist_yaw_joint": {
+      "joint_type": "hinge",
+      "index": 13,
+      "limits": {
+        "angle": [
+          -1.61443,
+          1.61443
+        ],
+        "force": [
+          -5.0,
+          5.0
+        ]
+      },
+      "parent": null,
+      "child": null
+    }
+  }
+}

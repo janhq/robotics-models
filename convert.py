@@ -44,14 +44,8 @@ def create_markdown_table(joints: List[Joint]) -> str:
         force_limits = "N/A"
 
         if joint.limits:
-            if "angle_lower" in joint.limits and "angle_upper" in joint.limits:
-                position_limits = (
-                    f"{joint.limits['angle_lower']} to {joint.limits['angle_upper']}"
-                )
-            if "force_lower" in joint.limits and "force_upper" in joint.limits:
-                force_limits = (
-                    f"{joint.limits['force_lower']} to {joint.limits['force_upper']}"
-                )
+            position_limits = f"{joint.limits['angle']}"
+            force_limits = f"{joint.limits['force']}"
 
         row = [
             str(joint.index),

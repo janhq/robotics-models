@@ -45,20 +45,25 @@ class RobotFormatParser:
 
         if self.format == "urdf":
             for idx, joint in enumerate(self.root.findall(".//joint")):
-                limits = {}
+                limits = {
+                    "angle": [],
+                    "force": [],
+                }
                 limit_elem = joint.find("limit")
                 if limit_elem is not None:
                     for attr in ["lower", "upper", "effort"]:
                         if attr in limit_elem.attrib:
                             if attr == "lower":
-                                limits["angle_lower"] = float(limit_elem.attrib[attr])
+                                limits["angle"].append(float(limit_elem.attrib[attr]))
 
                             if attr == "upper":
-                                limits["angle_upper"] = float(limit_elem.attrib[attr])
+                                limits["angle"].append(float(limit_elem.attrib[attr]))
 
                             if attr == "effort":
-                                limits["force_lower"] = -float(limit_elem.attrib[attr])
-                                limits["force_upper"] = float(limit_elem.attrib[attr])
+                                limits["force"] = [
+                                    -float(limit_elem.attrib[attr]),
+                                    float(limit_elem.attrib[attr]),
+                                ]
 
                 parent = joint.find("parent").attrib["link"]
                 child = joint.find("child").attrib["link"]
@@ -76,18 +81,17 @@ class RobotFormatParser:
 
         elif self.format == "mjcf":
             for idx, joint in enumerate(self.root.findall(".//joint")):
-                limits = {}
+                limits = {
+                    "angle": [],
+                    "force": [],
+                }
                 if "range" in joint.attrib:
-                    range_values = [float(x) for x in joint.attrib["range"].split()]
-                    limits["angle_lower"] = range_values[0]
-                    limits["angle_upper"] = range_values[1]
+                    limits["angle"] = [float(x) for x in joint.attrib["range"].split()]
 
                 if "actuatorfrcrange" in joint.attrib:
-                    range_values = [
+                    limits["force"] = [
                         float(x) for x in joint.attrib["actuatorfrcrange"].split()
                     ]
-                    limits["force_lower"] = range_values[0]
-                    limits["force_upper"] = range_values[1]
 
                 joints.append(
                     Joint(
